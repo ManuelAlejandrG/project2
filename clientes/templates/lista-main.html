@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Lista clientes</title>
+  
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  </head>
+  <body>
+    <div class="container">
+    <h1>Main</h1>
+    <table border="1">
+      <thead>
+        <th>Nombre</th>
+        <th>Numero</th>
+        <th>Frase1</th>
+        <th>Frase2</th>
+        <th>Frase2</th>
+        <th>Imagen</th>
+      </thead>
+      <tbody>
+        {% for l in main  %}
+          <tr>
+            <td>{{l.nombre}}</td>
+            <td>{{l.numero}}</td>
+            <td>{{l.frase1menu}}</td>
+            <td>{{l.frase2menu}}</td>
+            <td>{{l.im}}</td>
+            <td>  <img src="logo_M.png">  </img >  </td>
+            
+
+          </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+  </div>
+
+  </body>
+</html>
